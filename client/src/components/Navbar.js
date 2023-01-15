@@ -47,6 +47,6 @@ function BasicExample() {
       </Navbar>
     </div>
   );
-}
+};
 
-export default BasicExample;
+export default Navbar;

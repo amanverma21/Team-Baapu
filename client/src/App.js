@@ -1,13 +1,13 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes,} from "react-router-dom";
+import Navbar from './components/Navbar';
+import Signup from "./components/Signup";
+// import Login from "./components/Login";
+
 import "./App.css";
-import { Toaster } from "react-hot-toast";
-import { useSelector } from "react-redux";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import ProtectedRoute from "./components/ProtectedRoute";
-import PublicRoute from "./components/PublicRoute";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+// import StockData from "./components/stockData";
+// import StockNavbar from "./components/stockNavbar";
+
 
 function App() {
   const { loading } = useSelector((state) => state.alerts);
