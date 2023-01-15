@@ -11,7 +11,7 @@ function BasicExample() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavDropdown
+              {/* <NavDropdown
                 className="title"
                 title="Select Company"
                 id="basic-nav-dropdown"
@@ -22,7 +22,13 @@ function BasicExample() {
 
                 <NavDropdown.Item href="#action/3.4">Comp 4</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.5">Comp 5</NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
+              <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
             </Nav>
           </Navbar.Collapse>
         </Container>
