@@ -5,6 +5,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/reset.css';
+import { Provider } from 'react-redux'
+import store from './redux/store'
 // import stockData from './components/stockData';
 
 
@@ -14,7 +16,7 @@ root.render(
     <App />
     {/* <stockData />
      */}
-  </React.StrictMode>
+  </Provider>
 );
 
 reportWebVitals();
