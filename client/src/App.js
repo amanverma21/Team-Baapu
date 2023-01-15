@@ -1,4 +1,9 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes,} from "react-router-dom";
+import Navbar from './components/Navbar';
+import Signup from "./components/Signup";
+// import Login from "./components/Login";
+
 import "./App.css";
 // import StockData from "./components/stockData";
 // import StockNavbar from "./components/stockNavbar";
@@ -11,4 +16,4 @@ function App() {
   </div>;
 }
 
-export default App;
+export default App
