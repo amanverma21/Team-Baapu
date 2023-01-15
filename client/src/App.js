@@ -20,14 +20,14 @@ function App() {
       )}
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
-      <Route
-        path="/register"
-        element={
-          <PublicRoute>
-            <Register />
-          </PublicRoute>
-        }
-      />
+        <Route
+          path="/register"
+          element={
+            <PublicRoute>
+              <Register />
+            </PublicRoute>
+          }
+        />
         <Route
           path="/login"
           element={
@@ -39,9 +39,17 @@ function App() {
         <Route
           path="/"
           element={
-            // <ProtectedRoute>
+            <ProtectedRoute>
+            <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/:companyName"
+          element={
+            <ProtectedRoute>
               <Home />
-            // </ProtectedRoute>
+            </ProtectedRoute>
           }
         />
       </Routes>
